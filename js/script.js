@@ -14,6 +14,7 @@ function rain () {
             <div class="splat" style="animation-delay: 0.${randomAnimate}s;animation-duration: 0.5${randomAnimate}s;"</div>
         </div>`;
     }
+
     rainContainer.innerHTML = drops;
 }
 
