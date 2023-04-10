@@ -47,3 +47,60 @@ button {
     border: none;
 }
 /*-----------------------------*/
+
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #fff;
+    background-color: #262c37;
+}
+/*-----------------------------*/
+.rain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.drop {
+    position: absolute;
+    bottom: 100%;
+    width: 15px;
+    height: 120px;
+    pointer-events: none;
+}
+
+@keyframes drop {
+    0% {
+        transform: translateY(0vh);
+    }
+    75% {
+        transform: translateY(100vh);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}
+
+.stem {
+    width: 1px;
+    height: 100%;
+    margin-left: 7px;
+    background: linear-gradient(to button, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.25));
+    animation: stem 0.5s infinite linear;
+}
+
+@keyframes stem {
+    0% {
+        opacity: 1;
+    }
+    65% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+/*-----------------------------*/
