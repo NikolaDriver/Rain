@@ -9,7 +9,7 @@ function rain () {
         const randomBottom = Math.floor(Math.random() * 4 + 2);
 
         drops += `
-        <div class= "drop" style= "left:${index}%;bottom:${randomBottom + 100}%;animation-delay: 0.${randomAnimate}s;animation-duration: 0.5${randomAnimate}s;">
+        <div class="drop" style="left:${index}%;bottom:${randomBottom + 100}%;animation-delay: 0.${randomAnimate}s;animation-duration: 0.5${randomAnimate}s;">
             <div class="stem" style="animation-delay: 0.${randomAnimate}s;animation-duration: 0.5${randomAnimate}s;"</div>
             <div class="splat" style="animation-delay: 0.${randomAnimate}s;animation-duration: 0.5${randomAnimate}s;"</div>
         </div>`;
